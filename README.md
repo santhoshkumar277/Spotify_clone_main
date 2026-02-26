@@ -36,3 +36,6 @@ A fully functional Spotify Clone developed as a Web Developer Assignment. This p
 - **Backend:** Node.js, Express.
 - **Icons:** FontAwesome.
 - **Hosting:** vercel (Backend) & GitHub (Source Code).
+
+- ### Note:
+- deployment site may be slow website so run locally feel better experience comparely online
