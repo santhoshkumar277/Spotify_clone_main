@@ -1,3 +1,17 @@
+const express = require('express');
+const path = require('path');
+const app = express();
+
+app.use(express.json());
+// Task 1: Dummy Auth
+app.post('/login', (req, res) => {
+const { username, password } = req.body;
+if (username === 'admin' && password === 'password123') {
+res.json({ success: true });
+} else {
+res.status(401).json({ success: false });
+}
+});
 const music = new Audio('vande.mp3');
 
 // create Array 
@@ -301,3 +315,5 @@ left_scrolls.addEventListener('click', ()=>{
 right_scrolls.addEventListener('click', ()=>{
     item.scrollLeft += 330;
 })
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
