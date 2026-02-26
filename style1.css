@@ -1,0 +1,84 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    padding: 32px;
+}
+
+.logo {
+    width: 180px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #282828;
+    margin-bottom: 30px;
+}
+
+.login-header-text {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    background-color: #121212;
+    border: 1px solid #727272;
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: white;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #1DB954; /* Spotify Green */
+    border: none;
+    border-radius: 500px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-btn:hover {
+    transform: scale(1.04);
+    background-color: #1ed760;
+}
+
+.error-message {
+    color: #e91429;
+    margin-top: 15px;
+    font-size: 14px;
+}
