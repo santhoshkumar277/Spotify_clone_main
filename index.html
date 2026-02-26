@@ -17,6 +17,7 @@ button { width: 80%; padding: 15px; background: #1DB954; border: none; border-ra
 </head>
 
 <body>
+    <header>
     <div id="login" class="login">
 <i class="fab fa-spotify" style="font-size: 50px; color: #1DB954; margin-bottom: 20px;"></i>
 <input type="text" id="u" placeholder="admin">
@@ -25,7 +26,7 @@ button { width: 80%; padding: 15px; background: #1DB954; border: none; border-ra
 </div>
 
 <div id="dash">
-<!--header><-->
+
     <div class="menu_side">
         <h1>Spotify</h1>
         <div class="playlist">
@@ -299,8 +300,9 @@ button { width: 80%; padding: 15px; background: #1DB954; border: none; border-ra
             <div class="dot" id="vol_dot"></div>
         </div>
     </div>
-<!--/header><-->
+
 </div>
+        </header>
     <script>
         async function doLogin() {
 const res = await fetch('/login', {
