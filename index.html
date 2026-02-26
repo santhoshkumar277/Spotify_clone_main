@@ -29,28 +29,25 @@
         </main>
     </div>
 
-    <script>
-        alert("button clicked");
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const messageDiv = document.getElementById('message');
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+e.preventDefault(); // Stop page refresh
 
-            const response = await fetch('/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, password })
-            });
+const user = document.getElementById('username').value;
+const pass = document.getElementById('password').value;
+const msg = document.getElementById('message');
 
-            const result = await response.json();
-            if (response.ok) {
-                alert("Login successful!");
-                window.location.href = "dashboard.html"; // Redirect on success
-            } else {
-                messageDiv.innerText = result.message;
-            }
-        });
-    </script>
+// STATIC CHECK (No server needed for GitHub Pages)
+if (user === "admin" && pass === "1234") {
+msg.style.color = "#1DB954";
+msg.innerText = "Redirecting...";
+
+// Use relative path for GitHub Pages
+window.location.href = "dashboard.html";
+} else {
+msg.innerText = "Incorrect username or password.";
+}
+});
+</script>
 </body>
 </html>
