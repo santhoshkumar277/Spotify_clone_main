@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 
 app.use(express.json());
+app.use(express.static(''));
 // Task 1: Dummy Auth
 app.post('/login', (req, res) => {
 const { username, password } = req.body;
