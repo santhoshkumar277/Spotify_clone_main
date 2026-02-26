@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png"/>
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 <style>
 .login { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #121212; }
 input { width: 80%; padding: 15px; margin: 10px; background: #333; border: none; color: #fff; border-radius: 5px; }
 button { width: 80%; padding: 15px; background: #1DB954; border: none; border-radius: 30px; font-weight: bold; cursor: pointer; }
 </style>
+    -->
 </head>
 
 <body>
     <header>
-    <div id="login" class="login">
+<!--    <div id="login" class="login">
 <i class="fab fa-spotify" style="font-size: 50px; color: #1DB954; margin-bottom: 20px;"></i>
 <input type="text" id="u" placeholder="admin">
 <input type="password" id="p" placeholder="password123">
@@ -26,7 +27,7 @@ button { width: 80%; padding: 15px; background: #1DB954; border: none; border-ra
 </div>
 
 <div id="dash">
-
+-->
     <div class="menu_side">
         <h1>Spotify</h1>
         <div class="playlist">
@@ -300,10 +301,9 @@ button { width: 80%; padding: 15px; background: #1DB954; border: none; border-ra
             <div class="dot" id="vol_dot"></div>
         </div>
     </div>
-
-</div>
+                
         </header>
-    <script>
+<!--    <script>
         async function doLogin() {
 const res = await fetch('/login', {
 method: 'POST',
@@ -315,7 +315,7 @@ login.style.display = 'none';
 dash.style.display = 'flex';
 } else { alert("Wrong credentials!"); }
 }
-    </script>
+    </script>-->
     <script src="app.js"></script>
 </body>
 
