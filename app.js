@@ -1,8 +1,3 @@
-// Sample event listener logic
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Stop page reload
-    // Validate credentials and handle redirection
-});
 
 const music = new Audio('vande.mp3');
 
