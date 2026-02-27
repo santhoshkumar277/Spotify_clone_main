@@ -51,9 +51,9 @@ app.post('/login', (req, res) => {
 
     // Simple check (replace with real logic)
     if (username === 'admin' && password === 'password') {
-        res.redirect('/dashboard'); 
+        res.redirect('/dashboard?msg='+"Success"); 
     } else {
-        res.redirect('/');
+        res.redirect('/?msg='+"Failed");
     }
 });
 
