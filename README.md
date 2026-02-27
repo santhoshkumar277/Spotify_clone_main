@@ -5,6 +5,7 @@ A fully functional Spotify Clone developed as a Web Developer Assignment. This p
 
 ## 🚀 Live Demo
 **Link:** https://spotifyclonemain.vercel.app/
+render host Link  https://spotify-clone-main-vca9.onrender.com
 
 ## ✨ Features Implemented
 
