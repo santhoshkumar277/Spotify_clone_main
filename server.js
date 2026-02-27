@@ -51,13 +51,14 @@ app.post('/login', (req, res) => {
 
     // Simple check (replace with real logic)
     if (username === 'admin' && password === '1234') {
-        res.redirect('/dashboard?msg='+"Success"); 
+        res.redirect('/dashboard'); 
     } else {
-        res.redirect('/?error=true');
+        res.redirect('/login');
         //res.render('login', { error: 'Invalid username or password' });
     }
 });
-
+app.get('/login',(req,res)=>{
+    res.sendFile(path.json(__dirname, 'index.html'));
 // 3. Define the route that serves dashboard.html
 app.get('/dashboard', (req, res) => {
     res.sendFile(path.join(__dirname, 'dashboard.html'));
