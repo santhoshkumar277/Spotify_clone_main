@@ -79,5 +79,17 @@
             <button type="submit">Log In</button>
         </form>
     </div>
+    <script>
+    // Check if the URL contains "?error=true"
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    if (urlParams.get('error') === 'true') {
+        alert("Login failed! Please check your username and password.");
+        
+        // Optional: Clean up the URL so the alert doesn't pop up again on refresh
+        window.history.replaceState({}, document.title, "/login");
+    }
+</script>
+
 </body>
 </html>
