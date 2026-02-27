@@ -4,8 +4,7 @@
 A fully functional Spotify Clone developed as a Web Developer Assignment. This project replicates the core Spotify experience, including a secure login, a dynamic dashboard, and a working music player with backend integration.
 
 ## 🚀 Live Demo
-**Link:** https://spotifyclonemain.vercel.app/
-render host Link  https://spotify-clone-main-vca9.onrender.com
+**Link:** https://spotify-clone-main-vca9.onrender.com
 
 ## ✨ Features Implemented
 
@@ -36,7 +35,7 @@ render host Link  https://spotify-clone-main-vca9.onrender.com
 - **Frontend:** HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+).
 - **Backend:** Node.js, Express.
 - **Icons:** FontAwesome.
-- **Hosting:** vercel (Backend) & GitHub (Source Code).
+- **Hosting:** render (Backend) & GitHub (Source Code).
 
 - ### Note:
 - deployment site may be slow website so run locally feel better experience comparely online
