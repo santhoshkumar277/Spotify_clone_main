@@ -53,7 +53,7 @@ app.post('/login', (req, res) => {
     if (username === 'admin' && password === 'password') {
         res.redirect('/dashboard'); 
     } else {
-        res.send('Login Failed');
+        res.redirect('/');
     }
 });
 
