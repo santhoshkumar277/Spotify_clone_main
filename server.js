@@ -46,7 +46,7 @@ app.get('/', (req, res) => {
 });
 
 // 2. Handle login and REDIRECT to dashboard.html
-app.post('/login', (req, res) => {
+app.post('/login1', (req, res) => {
     const { username, password } = req.body;
 
     // Simple check (replace with real logic)
@@ -71,6 +71,6 @@ const PORT = process.env.PORT || 10000;
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
-app.get('*', (req, res) => {
+app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
