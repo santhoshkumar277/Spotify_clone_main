@@ -38,7 +38,7 @@ const app = express();
 
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
-
+app.use(express.static(path.join(__dirname,' ')));
 // 1. Run index.html when the user visits the home page (http://localhost:3000)
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
@@ -58,7 +58,7 @@ app.post('/login', (req, res) => {
 
 // 3. Define the route that serves dashboard.html
 app.get('/dashboard', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dashboard.html'));
+    res.sendFile(path.join(__dirname, ' ', 'dashboard.html'));
 });
 
 app.listen(3000, () => {
