@@ -50,11 +50,11 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
     // Simple check (replace with real logic)
-    if (username === 'admin' && password === 'password') {
+    if (username === 'admin' && password === '1234') {
         res.redirect('/dashboard?msg='+"Success"); 
     } else {
-        //res.redirect('/?msg='+"Failed");
-        res.render('login', { error: 'Invalid username or password' });
+        res.redirect('/login?error=true');
+        //res.render('login', { error: 'Invalid username or password' });
     }
 });
 
