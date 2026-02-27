@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Spotify Clone</title>
-    <!-- Ensure style.css is in the same folder -->
+    <!-- Ensure style.css is in the same folder 
     <link rel="stylesheet" href="style1.css"> 
     <style>
         /* Minimal fallback styles in case CSS doesn't load */
@@ -48,5 +48,36 @@
             }
         });
     </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <style>
+        :root { --spotify-green: #1DB954; --dark-bg: #121212; --card-bg: #181818; }
+        body { background-color: var(--dark-bg); color: white; font-family: 'Helvetica Neue', Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-card { background: var(--card-bg); padding: 40px; border-radius: 8px; width: 100%; max-width: 400px; text-align: center; }
+        h1 { font-size: 28px; margin-bottom: 30px; letter-spacing: -1px; }
+        input { width: 100%; padding: 14px; margin: 10px 0; border-radius: 4px; border: 1px solid #727272; background: #2a2a2a; color: white; font-size: 16px; box-sizing: border-box; }
+        input:focus { border-color: white; outline: none; }
+        button { width: 100%; padding: 14px; background-color: var(--spotify-green); border: none; border-radius: 50px; font-weight: bold; font-size: 16px; color: black; cursor: pointer; margin-top: 20px; transition: transform 0.2s; }
+        button:hover { transform: scale(1.04); background-color: #1ed760; }
+        .logo { width: 40px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <img class="logo" src="https://upload.wikimedia.org" alt="Spotify">
+        <h1>Log in to Spotify</h1>
+        <form action="/login" method="POST">
+            <input type="text" name="username" placeholder="Email or username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
 </body>
 </html>
