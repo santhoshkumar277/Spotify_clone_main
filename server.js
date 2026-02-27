@@ -53,7 +53,8 @@ app.post('/login', (req, res) => {
     if (username === 'admin' && password === 'password') {
         res.redirect('/dashboard?msg='+"Success"); 
     } else {
-        res.redirect('/?msg='+"Failed");
+        //res.redirect('/?msg='+"Failed");
+        res.render('login', { error: 'Invalid username or password' });
     }
 });
 
